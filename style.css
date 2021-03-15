@@ -11,12 +11,10 @@
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
-
 }
 .header_container{
     padding: 20px 55px 32px 40px;
     display: flex;
-    /*flex-wrap: wrap;*/
     justify-content: space-between;
 }
 .header__logo a{
@@ -180,8 +178,8 @@ section.hero{
 
 }
 a.hero__btn{
-
-    width:160px;
+    width:100%;
+    max-width:160px;
     mix-blend-mode: normal;
     border: 2px solid rgb(255 255 255 / 20%);
     border-radius: 16px;
@@ -197,19 +195,24 @@ a.hero__btn{
     margin-top: 24px;
 }
 /*End Hero Section*/
-
+.parent_container{
+    padding: 40px 113px 0 113px;
+}
 /*Start Categories Section*/
 section.category{
     background-color:#F2F2F2;
-    padding: 40px 113px 25px 113px;
+    /*padding: 40px 113px 25px 113px;*/
 }
 .category_container{
     display: flex;
     flex-wrap:wrap;
+
 }
 .category_container .first__item{
-    width: 558px;
-    height: 440px;
+    /*height: 440px;*/
+    width: 100%;
+    max-width: 558px;
+    /*height: 40%;*/
     background: url("img/women_collection_category.png");
     mix-blend-mode: normal;
     border-radius: 16px;
@@ -245,6 +248,8 @@ section.category{
     margin-left:0;
 }
 a.category_btn{
+    width:100%;
+    max-width: 96px;
     text-decoration: none;
     padding: 6px 22px 8px 21px;
     background-color: rgb(255 255 255 / 20%);
@@ -268,10 +273,11 @@ a.category_btn{
     margin-bottom: 24px;
 }
 .second__pic{
-    width:267px;
-    height: 208px;
+    max-width:267px;
+    width: 100%;
+    height:auto;
     margin-bottom: 24px;
-    background: url('img/dresses_category.png');
+    background: url('img/dresses_category.png') no-repeat;
     mix-blend-mode: normal;
     opacity: 0.4;
     border-radius: 16px;
@@ -280,6 +286,8 @@ a.category_btn{
     padding:32px;
 }
 .second__pic_btn{
+    width:100%;
+    max-width:72px;
     background: rgb(255 255 255 / 20%);
     mix-blend-mode: normal;
     border-radius: 8px;
@@ -305,6 +313,7 @@ a.category_btn{
     color: #FFFFFF;
 }
 .third__item{
+
     background:url('img/denim_jackets_category.png');
     border-radius: 16px;
     background-position: 100% 50%;
@@ -313,6 +322,8 @@ a.category_btn{
     padding:33px;
 }
 .third__item_btn{
+    width: 100%;
+    max-width: 72px;
     padding: 8px 20px;
     text-decoration: none;
     background: rgb(255 255 255 / 20%);
@@ -340,7 +351,7 @@ a.category_btn{
 /*Start Slider Section*/
 section.slider{
     min-width: 0;
-    padding: 0 113px 40px 113px;
+    /*padding: 0 113px 40px 113px;*/
     background: #F2F2F2;
 }
 .slider_block{
@@ -423,7 +434,7 @@ section.slider{
 section.product{
     min-width: 0;
     background: #F2F2F2;
-    padding: 0 113px 40px 113px;
+    padding: 0 0 40px 0;
 }
 section.product h2{
     font-family: 'Playfair Display',sans-serif;
@@ -437,8 +448,6 @@ section.product h2{
 }
 .product_slider_item{
     display: block;
-    /*display: flex;*/
-    /*flex-direction: column;*/
     overflow:hidden;
     border-radius:16px;
     background: #fff;
@@ -490,8 +499,9 @@ section.product h2{
     color: #1B2437;
 }
 .product_btn{
-    width: 160px;
-    height: 52px;
+    width: 100%;
+    max-width: 160px;
+    /*height: 52px;*/
     text-decoration: none;
     border: 2px solid #EDA3B5;
     border-radius: 16px;
@@ -503,7 +513,7 @@ section.product h2{
     line-height: 25px;
     text-align: center;
     color: #EDA3B5;
-    padding-top: 12px;
+    padding:12px 0 15px;
 }
 .product_btn:hover{
     background:#EDA3B5;
@@ -580,12 +590,12 @@ section.product h2{
 footer{
 
     background: #fff;
-    padding:0 113px;
+    /*padding:0 113px;*/
 }
-.footer_row_small{
-    padding-top: 24px;
+/*.footer_row_small{*/
+    /*padding-top: 24px;*/
 
-}
+/*}*/
 ul.row_links{
     list-style:none;
     display: flex;
@@ -617,13 +627,11 @@ ul.row_links li a.active_page {
 .footer_row_large{
     display: flex;
     justify-content: space-between;
-    padding: 0 107px 43px 0;
+    padding: 0 0 43px 0;
 }
-
 .column_first{
     width: 25%;
 }
-
 .footer_row_large h3{
     font-family: 'Playfair Display',sans-serif;
     font-style: normal;
@@ -656,7 +664,7 @@ ul.row_links li a.active_page {
     padding-top:25px;
 }
 .footer_row_large ul li{
-padding:8px;
+    padding:8px;
     list-style: none;
 }
 .footer_row_large ul li a{
@@ -667,15 +675,13 @@ padding:8px;
     font-size: 16px;
     line-height: 20px;
     color: #8E8E93;
-
 }
-
 /*End Footer*/
 
 /*Start Copyrights Section*/
 section.rights{
     background: #EFEFF4;
-    padding:0 113px;
+    /*padding:0 113px;*/
 }
 .rights_container{
     display: flex;
