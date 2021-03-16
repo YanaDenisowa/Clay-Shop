@@ -33,6 +33,9 @@
     border:none;
     background: url('img/arrow.png') 0 0/ 100% no-repeat;
 }
+ul.slick-dots{
+    margin-bottom:0;
+}
 .slider_block .slick-dots{
     display: flex;
     align-items: center;
@@ -123,4 +126,20 @@
 .product_slider .slick-dots li.slick-active button{
     background-color: #1B2437;
     opacity: 0.6;
+}
+@media screen and (max-width: 576px){
+    .product_slider .slick-dots li{
+        display:none;
+    }
+    .product_slider .slick-arrow.slick-prev{
+        right: 55px;
+        top: -80px;
+    }
+    .product_slider .slick-arrow.slick-next{
+        right:20px;
+        top: -80px;
+    }
+    section.product h2{
+        padding-left: 20px;
+    }
 }
