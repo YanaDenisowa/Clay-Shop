@@ -7,10 +7,13 @@
 }
 
 /*Start Header*/
-.container{
+.my_container{
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
+}
+.parent_container{
+    padding: 40px 113px 0 113px;
 }
 .header_container{
     padding: 20px 55px 32px 40px;
@@ -195,38 +198,30 @@ a.hero__btn{
     margin-top: 24px;
 }
 /*End Hero Section*/
-.parent_container{
-    padding: 40px 113px 0 113px;
-}
+
 /*Start Categories Section*/
 section.category{
     background-color:#F2F2F2;
-    /*padding: 40px 113px 25px 113px;*/
 }
 .category_container{
     display: flex;
     flex-wrap:wrap;
-
 }
-.category_container .first__item{
-    /*height: 440px;*/
-    width: 100%;
-    max-width: 558px;
-    /*height: 40%;*/
-    background: url("img/women_collection_category.png");
-    mix-blend-mode: normal;
-    border-radius: 16px;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:50% 50%;
-    margin-right: 24px;
-    margin-bottom: 24px;
+img{
+    padding-bottom:24px;
 }
-.item__info{
-    padding: 32px 0 0 32px;
+.row{
+    position: relative;
 }
-.item__info h2 {
+.col-sm-6{
+    position: relative;
+}
+.image_text{
+    position:absolute;
+    top:32px;
+    left:32px;
+}
+.image_text h2{
     font-family: 'Playfair Display', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -236,7 +231,7 @@ section.category{
     color: #FFFFFF;
     padding-bottom: 12px;
 }
-.item__info h3{
+.image_text h3{
     font-family: 'Mulish',sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -247,7 +242,7 @@ section.category{
     padding-bottom: 24px;
     margin-left:0;
 }
-a.category_btn{
+.image_text a.category_btn {
     width:100%;
     max-width: 96px;
     text-decoration: none;
@@ -256,36 +251,16 @@ a.category_btn{
     mix-blend-mode: normal;
     border-radius: 8px;
 }
-.category_btn span{
-    font-family: 'Mulish',sans-serif;
+.image_text .category_btn span {
+    font-family: 'Mulish', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    color:#ffffff;
+    color: #ffffff;
 }
-.item__container{
-    display: flex;
-}
-.first__pic{
-    margin-right: 24px;
-    margin-bottom: 24px;
-}
-.second__pic{
-    max-width:267px;
-    width: 100%;
-    height:auto;
-    margin-bottom: 24px;
-    background: url('img/dresses_category.png') no-repeat;
-    mix-blend-mode: normal;
-    opacity: 0.4;
-    border-radius: 16px;
-}
-.pic__info{
-    padding:32px;
-}
-.second__pic_btn{
+.image_text .second__pic_btn{
     width:100%;
     max-width:72px;
     background: rgb(255 255 255 / 20%);
@@ -301,27 +276,17 @@ a.category_btn{
     line-height: 18px;
     text-align: center;
 }
-.pic__info h2{
-    margin-top:66px;
-    font-family: 'Playfair Display',sans-serif;
+.image_text h2 {
+    /*margin-top: 66px;*/
+    font-family: 'Playfair Display', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 34px;
     line-height: 45px;
     letter-spacing: 0.4px;
-    text-transform: uppercase;
     color: #FFFFFF;
 }
-.third__item{
-
-    background:url('img/denim_jackets_category.png');
-    border-radius: 16px;
-    background-position: 100% 50%;
-}
-.third__item_info{
-    padding:33px;
-}
-.third__item_btn{
+.image_text .third__item_btn{
     width: 100%;
     max-width: 72px;
     padding: 8px 20px;
@@ -337,21 +302,18 @@ a.category_btn{
     text-align: center;
     color: #FFFFFF;
 }
-.third__item_info h2{
-    margin-top:66px;
-    margin-bottom: 9px;
-    font-family: 'Playfair Display',sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 34px;
-    line-height: 45px;
-    letter-spacing: 0.4px;
-    color: #FFFFFF;
+
+@media screen and (max-width: 768px) {
+    img{
+        width:100%;
+        height: 267px ;
+    }
 }
+
 /*Start Slider Section*/
 section.slider{
     min-width: 0;
-    /*padding: 0 113px 40px 113px;*/
+    padding: 0 0 40px 0;
     background: #F2F2F2;
 }
 .slider_block{

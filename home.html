@@ -10,11 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
     <!--End Google Fonts-->
 
-    <!--&lt;!&ndash;Start Slick Slider&ndash;&gt;-->
-    <!--<link rel="stylesheet" type="text/css" href="slick/slick.css"/>-->
-    <!--&lt;!&ndash;// Add the new slick-theme.css if you want the default styling&ndash;&gt;-->
-    <!--<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>-->
-    <!--&lt;!&ndash;End Slick Slider&ndash;&gt;-->
+    <!--Start Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--End Bootstrap-->
 
     <!--Start Main CSS-->
     <link rel="stylesheet" href="style.css">
@@ -23,7 +21,7 @@
 <body>
 <!-- Start Header -->
 <header>
-    <div class="header container">
+    <div class="header my_container">
         <div class="header_container">
         <div class="header__logo">
             <a href="#">Clay Shop</a>
@@ -40,7 +38,7 @@
             <a href="#" class="cart"></a>
         </div>
         </div>
-        <nav class="header__nav container">
+        <nav class="header__nav my_container">
             <ul class="header_menu">
                 <li><a href="#" class="active">Home</a></li>
                 <li class="dropdown">
@@ -64,7 +62,7 @@
 <!-- End Header -->
 <!--Start Hero Section-->
 <section class="hero ">
-    <div class="hero_info container">
+    <div class="hero_info my_container">
         <h2>Admire Stylish<br>
             Dresses & Looks
         </h2>
@@ -78,31 +76,38 @@
 <!--End Hero Section-->
 <!--Start Categories Section-->
 <section class="category ">
-    <div class="category_container container parent_container">
-        <div class="first__item">
-            <div class="item__info">
-                <h2>Women<br>
-                    Collection</h2>
-                <h3>Spring 2020</h3>
-                <a href="#" class="category_btn"><span>Popular</span></a>
-             </div>
-        </div>
-        <div class="second__item">
-            <div class="item__container">
-                <div class="first__pic">
-                    <img src="img/bestsellers_category.png" alt="pic3">
-                </div>
-                <div class="second__pic">
-                    <div class="pic__info">
-                        <a href="#" class="second__pic_btn">New</a>
-                        <h2>Dresses</h2>
+    <div class="category_container my_container parent_container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="image_text">
+                        <h2>Women<br>
+                            Collection</h2>
+                        <h3>Spring 2020</h3>
+                        <a href="#" class="category_btn"><span>Popular</span></a>
                     </div>
+                    <img src="img/women_collection_category.png"   alt="" class="img-fluid">
                 </div>
-            </div>
-            <div class="third__item">
-                <div class="third__item_info">
-                    <a href="#" class="third__item_btn">New</a>
-                    <h2>Denim Jackets</h2>
+                <div class="col-md-6 col-sm-12">
+                    <div class="row ">
+                        <div class="col-sm-6">
+                            <img src="img/bestsellers_category.png" alt="" class="img-fluid" >
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="image_text">
+                                <a href="#" class="second__pic_btn">New</a>
+                                <h2>Dresses</h2>
+                            </div>
+                            <img src="img/dresses_category.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="image_text">
+                            <a href="#" class="third__item_btn ">New</a>
+                            <h2>Denim Jackets</h2>
+                        </div>
+                        <img src="img/denim_jackets_category.png" alt=""  class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,7 +117,7 @@
 <!--Start Slider Section-->
 
 <section class="slider parent_container">
-    <div class="slider_block container">
+    <div class="slider_block my_container">
         <div class="slider_item">
             <img src="img/Bitmap.png" alt="shoes" style="padding-top:57px; ">
             <h3 style="margin-top:34px; ">Louis Vouiton</h3>
@@ -183,8 +188,8 @@
 <!--Start Product Section-->
 
 <section class="product">
-    <h2 class="container parent_container">You may like</h2>
-    <div class="product_container container parent_container">
+    <h2 class="my_container parent_container">You may like</h2>
+    <div class="product_container my_container parent_container">
         <div class="product_slider">
             <div class="product_slider_item">
 
@@ -282,7 +287,7 @@
 </section>
 <!--End Product Section-->
 <!--Start Footer-->
-<footer class="footer container parent_container">
+<footer class="footer my_container parent_container">
     <div class="footer_row_small ">
         <ul class="row_links">
             <li><a href="#" class="active_page">Home</a></li>
@@ -290,7 +295,7 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <div class="line_divider container"></div>
+        <div class="line_divider my_container"></div>
     </div>
     <div class="footer_row_large">
         <div class="column_first">
@@ -332,7 +337,7 @@
 <!--End Footer-->
 <!--Start Copyrights-->
 <section class="rights ">
-    <div class="rights_container container parent_container">
+    <div class="rights_container my_container parent_container">
     <p>© Clay Shop all rights reserved</p>
         <div class="rights_social_links">
             <ul class="rights_social_icon">
