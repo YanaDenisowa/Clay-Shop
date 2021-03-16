@@ -23,9 +23,16 @@ $(document).ready(function(){
             {
                 breakpoint:768,
                 settings: {
+                    slidesToShow:2,
+                }
+            },
+            {
+                breakpoint:576,
+                settings: {
                     slidesToShow:1,
                 }
             }
+
 
         ]
     });
@@ -55,6 +62,12 @@ $(document).ready(function(){
             {
                 breakpoint:768,
                 settings: {
+                    slidesToShow:2,
+                }
+            },
+            {
+                breakpoint:576,
+                settings: {
                     slidesToShow:1,
                 }
             }
@@ -71,7 +84,7 @@ function myFunction() {
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.drop_btn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var dropdowns = document.getElementsByClassName("dropdown_content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
