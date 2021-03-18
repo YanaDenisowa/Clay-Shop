@@ -59,7 +59,11 @@ ul.slick-dots{
     background-color: #1B2437;
     opacity: 0.6;
 }
-
+@media screen and (max-width: 576px){
+    .slider_block .slick-dots li{
+        display: none;
+    }
+}
 
 /*********************Product Section*/
 .slick-track{
@@ -127,9 +131,17 @@ ul.slick-dots{
     background-color: #1B2437;
     opacity: 0.6;
 }
+@media screen and (max-width: 768px){
+    .slick-list{
+        margin:0;
+    }
+    .product_slider .slick-arrow.slick-prev {
+        right: 127px;
+}
 @media screen and (max-width: 576px){
-    .product_slider .slick-dots li{
-        display:none;
+
+    .product_slider .slick-dots button{
+        display: none;
     }
     .product_slider .slick-arrow.slick-prev{
         right: 55px;
@@ -141,5 +153,10 @@ ul.slick-dots{
     }
     section.product h2{
         padding-left: 20px;
+    }
+}
+@media screen and (max-width: 320px){
+    .product_slider .slick-dots li{
+        display: none;
     }
 }
