@@ -51,6 +51,17 @@
                 <span></span>
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
+                    <li class="mine_dropdown">
+                        <a href="#" class="drop_btn" onclick="toggleDropdownList()">Shop</a>
+                        <div class="dropdown_content" id="myDropdownBurger">
+                            <a href="#">Clothes</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Accessories</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Jacket</a>
+                        </div>
+                    </li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Info</a></li>
                     <li><a href="#">Contact</a></li>
@@ -62,7 +73,7 @@
             <ul class="header_menu">
                 <li><a href="#" class="active">Home</a></li>
                 <li class="mine_dropdown">
-                    <a href="#" class="drop_btn" onclick="myFunction()">Shop</a>
+                    <a href="#" class="drop_btn" onclick="toggleDropdownList()">Shop</a>
                     <div class="dropdown_content" id="myDropdown">
                         <a href="#">Clothes</a>
                         <a href="#">Bags</a>
