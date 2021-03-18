@@ -474,7 +474,7 @@ img{
         /*height: 267px ;*/
     }
     .image_text h2{
-        font-size:2rem;
+        font-size:1.5rem;
         margin-top:0;
     }
     .image_text h3{
@@ -523,7 +523,7 @@ section.slider{
 section.product{
     min-width: 0;
     background: #F2F2F2;
-    padding: 0 0 40px 0;
+    /*padding: 0 0 40px 0;*/
 }
 section.product h2{
     font-family: 'Playfair Display',sans-serif;
