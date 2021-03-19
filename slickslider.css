@@ -131,6 +131,11 @@ ul.slick-dots{
     background-color: #1B2437;
     opacity: 0.6;
 }
+@media screen and (max-width: 992px){
+    .slick-list{
+        margin:0;
+    }
+}
 @media screen and (max-width: 768px){
     .slick-list{
         margin:0;
