@@ -193,12 +193,14 @@
     transform: none;
 }
 /*Start dropdown menu*/
+
+.mine_dropdown a i.fas{
+    color:#1B2437;
+    font-size:20px;
+    padding-left: 16px;
+}
 .mine_dropdown {
     overflow: hidden;
-}
-.mine_dropdown a.drop_btn:after{
-    content: url('img/arrow_small.png');
-    padding-left: 16px;
 }
 .dropdown_content{
     display: none;
