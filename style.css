@@ -728,6 +728,7 @@ section.product h2{
     }
     .slide_card{
         padding-bottom:50px;
+
     }
     .product_slider_item span{
         font-size: 15px;
@@ -742,8 +743,7 @@ section.product h2{
         min-height: 120px;
     }
     .slide_card{
-        /*padding-bottom:0;*/
-        margin-left:15px;
+        margin: 0 15px;
     }
 }
 /*End Product Section*/
