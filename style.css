@@ -529,9 +529,15 @@ img{
     }
 
 }
+@media screen and (max-width: 576px){
+    .image_text h2{
+        font-size:1.1rem;
+    }
+
+}
 @media screen and (max-width: 320px) {
     .image_text h2{
-        font-size:0.8rem;
+        font-size:0.7rem;
         /*margin-top:0;*/
     }
 }
