@@ -70,8 +70,11 @@ ul.slick-dots{
     display: flex;
 }
 .slick-list{
-    margin: 0 -14px;
+    margin: 0 -7.5px;
     overflow: hidden;
+}
+.slick-slide {
+    padding: 0 7px;
 }
 .product_slider_item{
     display: block;
