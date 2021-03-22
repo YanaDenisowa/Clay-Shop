@@ -566,6 +566,9 @@ section.slider{
     padding: 0 0 40px 0;
     background: #F2F2F2;
 }
+.slider div.col-sm-12{
+    padding:0;
+}
 .slider_block{
     background-color: #fff;
     position: relative;
@@ -743,8 +746,12 @@ section.product h2{
         min-height: 120px;
     }
     .slide_card{
-        margin: 0 15px;
+        margin: 0 5px;
     }
+    section.slider{
+         padding: 0 12px 40px 12px;
+
+     }
 }
 /*End Product Section*/
 
