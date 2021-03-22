@@ -321,13 +321,18 @@ section.hero{
     background-size: cover;
     background-repeat: no-repeat;
  }
-.hero_info{
-    padding: 124px 113px;
+.col-xs-12{
+    padding-top:60px;
+    padding-bottom: 60px;
+
+}
+/*.hero_info{*/
+    /*padding: 124px 113px;*/
     /*max-width: 1140px;*/
     /*padding: 50px 0;*/
     /*margin:0 auto;*/
 
-}
+/*}*/
 .hero_info h2{
     font-family: 'Playfair Display', serif;
     font-style: normal;
@@ -362,18 +367,26 @@ a.hero__btn{
     font-size: 20px;
     line-height: 25px;
     text-align: center;
-    padding: 11px 27.5px 16px 26.5px;
-    margin-top: 24px;
+    padding: 11px 25px 16px 25px;
+    margin-bottom: 60px;
 }
 @media screen and (max-width: 1200px){
-
+    .hero_info{
+        padding: 50px;
+    }
     .hero_info h2{
         font-size: 2.4rem;
+
+    }
+}
+@media screen and (max-width: 768px){
+    .hero_info{
+        padding: 60px;
     }
 }
 @media screen and (max-width: 576px){
-    .hero_info{
-        padding: 50px 30px;
+    .col-xs-12 {
+        padding-top: 30px;
     }
         .hero_info h2{
         font-size: 2rem;
@@ -382,6 +395,11 @@ a.hero__btn{
         font-size:0.9rem;
     }
 }
+/*@media screen and (max-width: 320px)*/
+    /*.col-xs-12{*/
+        /*padding-top:20px;*/
+
+/*}*/
 /*End Hero Section*/
 
 /*Start Categories Section*/
