@@ -216,6 +216,17 @@
     margin: 72px auto 32px;
 
 }
+.mine_dropdown a i.fas{
+    /*margin:0 25px;*/
+    color:#1B2437;
+    font-size:20px;
+    /*content: url('img/arrow_small.png');*/
+    padding-left: 16px;
+}
+/*.mine_dropdown a i.fas:active,*/
+/*.mine_dropdown a i.fas:focus {*/
+    /*transform: rotate(-180deg);*/
+/*}*/
 ul.header_menu{
     list-style:none;
     display: flex;
@@ -226,10 +237,7 @@ ul.header_menu{
 .mine_dropdown {
     overflow: hidden;
 }
-.mine_dropdown a.drop_btn:after{
-    content: url('img/arrow_small.png');
-    padding-left: 16px;
-}
+
 .dropdown_content{
     display: none;
     position: absolute;
