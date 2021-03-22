@@ -86,6 +86,21 @@ function toggleDropdownList() {
     document.getElementById("myDropdownBurger").classList.toggle("show");
     document.getElementById("myDropdown").classList.toggle("show");
 
+    toggleDropdownIcon("dropdown_icon");
+    toggleDropdownIcon("dropdown_icon_burger");
+
+}
+
+function toggleDropdownIcon(iconId) {
+
+    if (document.getElementById(iconId).classList.contains("fa-caret-down")) {
+        document.getElementById(iconId).classList.remove("fa-caret-down");
+        document.getElementById(iconId).classList.add("fa-caret-right");
+    } else {
+        document.getElementById(iconId).classList.remove("fa-caret-right");
+        document.getElementById(iconId).classList.add("fa-caret-down");
+    }
+
 }
 
 // Close the dropdown menu if the user clicks outside of it
@@ -97,6 +112,7 @@ window.onclick = function(event) {
             var openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
+
             }
         }
     }
