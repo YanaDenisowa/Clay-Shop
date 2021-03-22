@@ -234,6 +234,31 @@ ul.header_menu{
 .mine_dropdown {
     overflow: hidden;
 }
+.dropdown_content_burger{
+     display: none;
+     position:relative;
+     background-color:white;
+     min-width: 200px;
+     padding:16px;
+     z-index: 1;
+     border-radius:16px;
+ }
+.dropdown_content_burger a{
+    text-decoration: none;
+    color: #1B2437;
+    display: block;
+    font-family: 'Playfair Display',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.dropdown_content_burger a:hover {
+    background-color: #F6F6F6;
+    color:#EDA3B5;
+    font-family: 'Playfair Display',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
 
 .dropdown_content{
     display: none;
