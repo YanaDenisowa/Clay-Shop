@@ -100,6 +100,7 @@ function toggleDropdownIcon(iconId) {
 }
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
+
     if (!event.target.matches('.drop_btn')) {
 
         var dropdowns = document.getElementsByClassName("dropdown_content");
@@ -127,3 +128,13 @@ window.onclick = function(event) {
 }
 
 
+function test() {
+    var ulMenu = document.getElementById("ul_menu_1");
+    ulMenu.style.transform = "none";
+    console.log(ulMenu);
+}
+function test2(){
+    var ulMenu2=document.getElementById("ul_menu_1");
+    ulMenu2.style.transform = "translate(0, -100%)";
+    console.log(ulMenu2);
+}
