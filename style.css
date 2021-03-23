@@ -7,6 +7,7 @@
 }
 
 /*Start Header*/
+
 .my_container{
     width: 100%;
     max-width:1140px;
@@ -426,11 +427,11 @@ section.category{
     position: relative;
 }
 
-/*.row:last-child{*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: space-between;*/
-/*}*/
+#category_second_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .col-sm-6{
     position: relative;
 }
