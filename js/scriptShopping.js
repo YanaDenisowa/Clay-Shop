@@ -25,17 +25,15 @@ window.onclick = function(event) {
             var openDropdown = dropdownsBurger[i];
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
-
                 toggleDropdownIcon("dropdown_icon_burger");
             }
         }
         for (i = 0; i < dropdownsBurger.length; i++) {
-console.log("hel");
             var openDropdown = dropdownsBurger[i];
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
             }
-            console.log("dfdsfd");
+
         }
     }
 }
