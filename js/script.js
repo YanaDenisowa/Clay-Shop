@@ -103,13 +103,13 @@ window.onclick = function(event) {
 
     if (!event.target.matches('.drop_btn')) {
 
-        var dropdowns = document.getElementsByClassName("dropdown_content");
+       let dropdowns = document.getElementsByClassName("dropdown_content");
 
-        var dropdownsBurger = document.getElementsByClassName("dropdown_content_burger");
-        var i;
+        let dropdownsBurger = document.getElementsByClassName("dropdown_content_burger");
+        let i;
         for (i = 0; i < dropdowns.length; i++) {
 
-            var openDropdown = dropdowns[i];
+            let openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
                 toggleDropdownIcon("dropdown_icon");
@@ -118,7 +118,7 @@ window.onclick = function(event) {
         }
         for (i = 0; i < dropdownsBurger.length; i++) {
 
-            var openDropdown = dropdownsBurger[i];
+            let openDropdown = dropdownsBurger[i];
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
 
@@ -128,13 +128,11 @@ window.onclick = function(event) {
 }
 
 
-function test() {
-    var ulMenu = document.getElementById("ul_menu_1");
-    ulMenu.style.transform = "none";
-    console.log(ulMenu);
+function menuShow() {
+    let ulMenuShow = document.getElementById("right_menu_burger");
+    ulMenuShow.style.transform = "none";
 }
-function test2(){
-    var ulMenu2=document.getElementById("ul_menu_1");
-    ulMenu2.style.transform = "translate(0, -100%)";
-    console.log(ulMenu2);
+function menuHide(){
+    let ulMenuHide=document.getElementById("right_menu_burger");
+    ulMenuHide.style.transform = "translate(0, -100%)";
 }
