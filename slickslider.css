@@ -89,7 +89,7 @@ ul.slick-dots{
     border: 1px solid white;
     outline:none;
     border-radius: 8px;
-    background:white;
+    /*background:white;*/
     cursor:pointer;
 }
 .product_slider .slick-arrow.slick-prev {
@@ -145,6 +145,7 @@ ul.slick-dots{
     }
     .product_slider .slick-arrow.slick-prev {
         right: 127px;
+    }
 }
 @media screen and (max-width: 576px){
 
@@ -163,8 +164,9 @@ ul.slick-dots{
         padding-left: 20px;
     }
 }
-@media screen and (max-width: 320px){
-    .product_slider .slick-dots li{
+@media screen and (max-width: 320px) {
+    .product_slider .slick-dots li {
         display: none;
     }
 }
+

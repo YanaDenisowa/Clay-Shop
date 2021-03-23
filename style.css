@@ -151,18 +151,18 @@
     background: #1B2437;
     border-radius: 3px;
     z-index: 1;
-    transform-origin: 5px 0px;
+    transform-origin: 5px 0;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
     background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
     opacity 0.55s ease;
 }
 
 .menu_toggle span:first-child{
-    transform-origin: 0% 0%;
+    transform-origin: 0 0;
 }
 
 .menu_toggle span:nth-last-child(2){
-    transform-origin: 0% 100%;
+    transform-origin: 0 100%;
 }
 
 .menu_toggle input:checked ~ span{
@@ -190,7 +190,7 @@
     border-radius: 16px;
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
+    transform-origin: 0 0;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -208,7 +208,7 @@
     font-size: 24px;
     line-height: 45px;
     text-align: center;
-    letter-spacing: 0.4px;
+    /*letter-spacing: 0.4;*/
     color: #1B2437;
 
 }
@@ -317,10 +317,10 @@ ul.header_menu li a.active{
 
 /*Start Hero Section*/
 section.hero{
-    background-image: url("img/hero.png");
-    background-position: 50% 50%;
+    background: url("img/hero.png") 50% 50% no-repeat;
+    /*background-position: 50% 50%;*/
     background-size: cover;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
  }
 .col-xs-12{
     padding-top:60px;
@@ -358,7 +358,7 @@ a.hero__btn{
     width:100%;
     max-width:160px;
     mix-blend-mode: normal;
-    border: 2px solid rgb(255 255 255 20%);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     text-decoration: none;
     color: #FFFFFF;
@@ -448,7 +448,7 @@ section.category{
     font-size:2.2rem;
     /*line-height: 51px;*/
     line-height: 1.5;
-    letter-spacing: 0.4px;
+    /*letter-spacing: 0.4;*/
     color: #FFFFFF;
     padding-bottom: 12px;
 }
@@ -472,7 +472,7 @@ section.category{
     text-decoration: none;
     /*padding: 6px 22px 8px 21px;*/
     padding:8px 0;
-    background-color: rgb(255 255 255 20%);
+    background-color: rgba(255, 255, 255, 0.2);
     mix-blend-mode: normal;
     border-radius: 8px;
     font-family: 'Mulish', sans-serif;
@@ -490,7 +490,7 @@ section.category{
     margin-bottom: 66px;
     width:100%;
     max-width:72px;
-    background: rgb(255 255 255 / 20%);
+    background: rgba(255, 255, 255, 0.2);
     mix-blend-mode: normal;
     border-radius: 8px;
     padding: 8px 0;
@@ -512,7 +512,7 @@ section.category{
     max-width: 72px;
     padding: 8px 0;
     text-decoration: none;
-    background: rgb(255 255 255 / 20%);
+    background: rgba(255, 255, 255, 0.2);
     mix-blend-mode: normal;
     border-radius: 8px;
     font-family: 'Mulish',sans-serif;
@@ -619,7 +619,7 @@ section.product h2{
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.5;
-    letter-spacing: 0.4px;
+    /*letter-spacing: 0.4px;*/
     color: #1B2437;
     /*padding-bottom: 33px;*/
 }
@@ -659,7 +659,7 @@ section.product h2{
     font-weight:400;
     font-size: 1.5rem;
     line-height: 1.5;
-    letter-spacing: 0.4px;
+    /*letter-spacing: 0.4px;*/
     color: #1B2437;
     padding:5px 30px 0 30px;
 }
@@ -687,7 +687,7 @@ section.product h2{
     font-weight: normal;
     font-size: 34px;
     line-height: 45px;
-    letter-spacing: 0.4px;
+    /*letter-spacing: 0.4px;*/
     color: #1B2437;
 }
 .product_btn{
