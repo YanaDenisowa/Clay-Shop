@@ -111,10 +111,9 @@ ul.slick-dots{
 .product_slider .slick-dots{
     right: 56px;
     position: absolute;
-    /*top:-65px;*/
-    top:-78px;
+    top:-68px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
 }
 .product_slider .slick-dots li{
@@ -144,12 +143,12 @@ ul.slick-dots{
         margin:0;
     }
     .product_slider .slick-arrow.slick-prev {
-        right: 127px;
+        right: 175px;
     }
 }
 @media screen and (max-width: 576px){
 
-    .product_slider .slick-dots button{
+    .product_slider .slick-dots li{
         display: none;
     }
     .product_slider .slick-arrow.slick-prev{
