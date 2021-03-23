@@ -62,7 +62,7 @@
 
 }
 .header__cart a i{
-    margin:0 15px;
+    margin:0 10px;
     color:#1B2437;
     font-size:22px;
 }
@@ -71,26 +71,11 @@
 }
 
 /*Start button menu*/
-.button_menu_burger {
-    pointer-events:none;
-    display: none;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    border-radius: 16px;
-    height: 65px;
-}
 
 @media screen and (max-width: 768px) {
     .header__cart a.burger i{
         display: block;
     }
-    .button_menu_burger{
-        position: absolute;
-        top:0;
-        display: block;
-        width: 100%;
-    }
-
     .dropdown_content {
         display: none;
         position: relative;
@@ -104,116 +89,54 @@
     .header_container{
         position: relative;
     }
-    .header__logo a{
-        padding-left:100px;
-    }
 }
 @media screen and (max-width: 576px) {
     .header__logo a{
-        padding-left:60px;
-        font-size: 18px;
+        margin-top:0;
+        font-weight: 700;
+        font-size: 14px;
     }
     .header__cart a{
         margin-right: 0;
     }
 }
 @media screen and (max-width: 320px) {
+    .header_container {
+        padding: 15px 20px 15px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .header__logo a {
         display: none;
     }
-
-    .header__cart a {
-        margin-right: 10px;
+    .header__cart a{
+        margin: 0 auto;
     }
 }
-/*.menu_toggle {*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*position: relative;*/
-    /*top: 25px;*/
-    /*padding-left:40px;*/
-    /*z-index: 1;*/
-    /*-webkit-user-select: none;*/
-    /*user-select: none;*/
-/*}*/
-
-
-/*.menu_toggle input{*/
-    /*display: flex;*/
-    /*!*flex-direction: column;*!*/
-    /*!*position: relative;*!*/
-    /*width: 40px;*/
-    /*height: 32px;*/
-    /*position: absolute;*/
-    /*cursor: pointer;*/
-    /*opacity: 0;*/
-    /*z-index: 2;*/
-/*}*/
-
-/*.menu_toggle span{*/
-    /*display: flex;*/
-    /*width: 29px;*/
-    /*height: 2px;*/
-    /*margin-bottom: 5px;*/
-    /*position: relative;*/
-    /*background: #1B2437;*/
-    /*border-radius: 3px;*/
-    /*z-index: 1;*/
-    /*transform-origin: 5px 0;*/
-    /*transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),*/
-    /*background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),*/
-    /*opacity 0.55s ease;*/
-/*}*/
-
-/*.menu_toggle span:first-child{*/
-    /*transform-origin: 0 0;*/
-/*}*/
-
-/*.menu_toggle span:nth-last-child(2){*/
-    /*transform-origin: 0 100%;*/
-/*}*/
-
-/*.menu_toggle input:checked ~ span{*/
-    /*opacity: 1;*/
-    /*transform: rotate(45deg) translate(-3px, -1px);*/
-    /*background: #36383F;*/
-/*}*/
-/*.menu_toggle input:checked ~ span:nth-last-child(3){*/
-    /*opacity: 0;*/
-    /*transform: rotate(0deg) scale(0.2, 0.2);*/
-/*}*/
-
-/*.menu_toggle input:checked ~ span:nth-last-child(2){*/
-    /*transform: rotate(-45deg) translate(0, -1px);*/
-/*}*/
-
-.menu_1{
+.right_menu{
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    /*width: 300px;*/
     width:100%;
-    /*height: 460px;*/
     box-shadow: 0 0 10px #85888C;
     margin: -120px auto;
-    /*margin:50px 0  0 50px будет справа*/
     padding: 20px 0;
     border-radius: 16px;
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0 0;
     transform: translate(0, -100%);
-    /*transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-
-.menu_1 li{
+.right_menu li{
     padding: 10px 0;
     list-style:none;
     transition-delay: 2s;
 }
-.menu_1 li a {
+.right_menu li a {
     display: block;
     text-decoration: none;
     font-family: 'Playfair Display',sans-serif;
@@ -222,17 +145,13 @@
     font-size: 24px;
     line-height: 45px;
     text-align: center;
-    /*letter-spacing: 0.4;*/
     color: #1B2437;
-
 }
-.menu_1 li a.burger i{
+.right_menu li a.burger i{
     position: absolute;
     top: 60px;
     right:30px;
-
 }
-
 .header__nav{
     margin: 72px auto 32px;
 
