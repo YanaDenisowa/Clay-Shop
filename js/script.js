@@ -1,4 +1,63 @@
+
+function refreshDots(ulObject) {
+    let liObjects = ulObject.childNodes;
+    let selectedLiObjectIndex = 0;
+
+    for (let i = 0; i < liObjects.length; i++) {
+        let liObject = liObjects[i];
+        if (liObject.classList.contains("slick-active")) {
+            selectedLiObjectIndex = i;
+            break;
+        }
+    }
+
+    for (let i = 0; i < liObjects.length; i++) {
+        var opacity = 0.2;
+        let difference = Math.abs( i - selectedLiObjectIndex);
+        if (difference == 1) {
+            opacity = 0.6;
+        } else if (difference == 2) {
+            opacity = 0.4;
+        } else if (difference > 2) {
+            opacity = 0.2;
+        }
+        let liObject = liObjects[i];
+        if (liObject.classList.contains("slick-active")) {
+            let divElements = liObject.childNodes;
+            for (let divElement of divElements) {
+                if (divElement.id.includes("_active")) {
+                    divElement.style.display = "block";
+                } else {
+                    divElement.style.display = "none";
+                }
+            }
+        } else {
+            let divElements = liObject.childNodes;
+            for (let divElement of divElements) {
+                if (divElement.id.includes("_active")) {
+                    divElement.style.display = "none";
+                } else {
+                    divElement.style.display = "block";
+                    divElement.style.opacity = opacity;
+                }
+            }
+        }
+    }
+}
+
 $(document).ready(function(){
+    $('.slider_block').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        let ulObjects = document.getElementsByClassName("slick-dots");
+        for (let ulObject of ulObjects) {
+            refreshDots(ulObject);
+        }
+    });
+    $('.slider_block').on('init', function(event, slick, currentSlide, nextSlide) {
+        let ulObjects = document.getElementsByClassName("slick-dots");
+        for (let ulObject of ulObjects) {
+            refreshDots(ulObject);
+        }
+    });
     $('.slider_block').slick({
         arrows: true,
         dots:true,
@@ -13,6 +72,12 @@ $(document).ready(function(){
         pauseOnFocus:true,
         pauseOnDotsHover:true,
         pauseOnHover:true,
+        customPaging : function(slider, i) {
+            let identifier = "slick_dot_" + i;
+            return '<div id="'+ identifier + '"><div class="slick_regular_dot"></div></div><div id="'+ identifier + '_active" class="slick_base_active_outer_dot">' +
+                '<div class="slick_base_active_inner_dot">' +
+                '<div class="slick_base_active_inner_inner_dot"></div></div></div>';
+        },
         responsive:[
             {
                 breakpoint:992,
@@ -41,6 +106,18 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
+    $('.product_slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        let ulObjects = document.getElementsByClassName("slick-dots");
+        for (let ulObject of ulObjects) {
+            refreshDots(ulObject);
+        }
+    });
+    $('.product_slider').on('init', function(event, slick, currentSlide, nextSlide) {
+        let ulObjects = document.getElementsByClassName("slick-dots");
+        for (let ulObject of ulObjects) {
+            refreshDots(ulObject);
+        }
+    });
     $('.product_slider').slick({
         arrows: true,
         dots:true,
@@ -54,7 +131,15 @@ $(document).ready(function(){
         autoplaySpeed:2000,
         pauseOnFocus:true,
         pauseOnDotsHover:true,
+        appendArrows: '.product .container .wrapper .slider_nav',
+        appendDots:'.product .container .wrapper .slider_nav',
         pauseOnHover:true,
+        customPaging : function(slider, i) {
+            let identifier = "slick_dot_" + i;
+            return '<div id="'+ identifier + '"><div class="slick_regular_dot"></div></div><div id="'+ identifier + '_active" class="slick_base_active_outer_dot">' +
+                '<div class="slick_base_active_inner_dot">' +
+                '<div class="slick_base_active_inner_inner_dot"></div></div></div>';
+        },
         responsive:[
             {
                 breakpoint:992,
@@ -74,6 +159,7 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow:1,
                     slidesToScroll:1,
+                    dots:false,
                 }
             }
 
