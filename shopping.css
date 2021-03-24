@@ -398,66 +398,98 @@ section.product_cards{
     height: 8px;
     width: 16px;
 }
+.mr{
+    margin-right:12px;
+}
+.size_select{
+    border:none;
+    max-width:260px;
+    padding: 0 0 0 12px;
+}
+.label_checkbox {
+    display: none;
 
-/*.arrow::before,*/
-/*.arrow::after {*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*bottom: 0px;*/
-    /*width: 0.15rem;*/
-    /*height: 100%;*/
-    /*transition: all 0.5s;*/
-/*}*/
+}
+.size_select .custom-select{
+    border:none;
+    padding: 0;
+}
+.size_select .custom-select__trigger{
+    padding: 0;
+    justify-content: unset;
 
-/*.arrow::before {*/
-    /*left: 5px;*/
-    /*transform: rotate(-45deg);*/
-    /*background-color: #D1D1D6;*/
-/*}*/
+}
+.size_select .custom-options{
+    top: 120%;
+}
 
-/*.arrow::after {*/
-    /*left: -5px;*/
-    /*transform: rotate(45deg);*/
-    /*background-color: #D1D1D6;*/
-/*}*/
-
-/*.open .arrow::before {*/
-    /*left: -5px;*/
-    /*transform: rotate(-45deg);*/
-/*}*/
-
-/*.open .arrow::after {*/
-    /*left: 5px;*/
-    /*transform: rotate(45deg);*/
-/*}*/
-/*form{*/
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-between;*/
-/*}*/
-/*select{*/
-    /*max-width:170px;*/
+.size_select .label_check {
+    max-width:68px;
+    /*margin-right:12px;*/
+    padding:20px 32px;
+    border-radius: 8px;
+    border: 2px solid #E5E5EA;
     /*background: #F2F2F2;*/
-    /*outline:none;*/
-    /*border: 2px solid #E5E5EA;*/
-    /*border-radius: 16px;*/
-    /*width:100%;*/
-    /*padding: 10px 35px 10px 15px;*/
-/*}*/
-/*.first_cell p {*/
-    /*font-family: 'Mulish',sans-serif;*/
-    /*font-style: normal;*/
-    /*font-weight: normal;*/
-    /*font-size: 16px;*/
-    /*color: #1B2437;*/
-/*}*/
-/*.first_cell option {*/
-    /*font-family: 'Mulish',sans-serif;*/
-    /*font-style: normal;*/
-    /*font-weight: normal;*/
-    /*font-size: 14px;*/
-    /*color: #C7C7CC;*/
-/*}*/
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mulish',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #1B2437;
+}
+.size_select .label_check:nth-child(4){
+    margin:0;
+}
+.size_select .label_check:nth-child(5){
+    margin:0;
+}
+.size_select .label_check:nth-child(6){
+    margin:0;
+}
+.size_select .custom-options{
+    display: flex;
+    /*padding: 10px;*/
+    margin: -1px;
+    flex-wrap: wrap;
+}
+.size_select .custom-option {
+    /*padding:8px 15px;*/
+    border-radius:8px;
+    position: relative;
+    font-family:"Mulish",sans-serif;
+    display: block;
+    /*padding: 0 15px;*/
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff;
+    /*line-height: 60px;*/
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.size_select .label_check:hover {
+    border-radius:8px;
+    color: #ffffff;
+    border:2px solid #EDA3B5;
+    background-color:#EDA3B5;
+}
+
+
+.size_select .selected  {
+    border:2px solid #EDA3B5;
+    border-radius: 8px;
+    color: white;
+    background-color: #EDA3B5;
+}
+
+
 
 .col-lg-4, .col-md-6, .col-sm-12{
     margin-bottom:12px;
@@ -547,8 +579,7 @@ section.product_cards{
     font-family: 'Mulish',sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 1.25rem;
     color: #1B2437;
 }
 .pagination a.active{
@@ -567,10 +598,13 @@ section.product_cards{
 .pagination a.next:before {
     content: url("img/arrow_outline_right_pink.png");
 }
-@media screen and (max-width: 992px){
-    /*.row{*/
-        /*margin-bottom:15px;*/
-    /*}*/
+@media screen and (max-width: 576px){
+    .pagination a{
+
+        font-weight: 400;
+        font-size: 0.4rem;
+
+    }
 }
 /*Start Footer*/
 .footer_container{
@@ -655,6 +689,9 @@ button:before{
     }
 }
 @media screen and (max-width: 568px) {
+    .footer_container{
+        padding-left:20px;
+    }
     .footer_row > div {
         width: 50%;
         margin-left:30px;
