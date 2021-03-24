@@ -41,7 +41,7 @@
                     <li class="mine_dropdown">
                         <a href="#" class="drop_btn" onclick="toggleDropdownList()">
                             Shop
-                            <i class="fas fa-caret-down drop_btn" id="dropdown_icon_burger"></i
+                            <i class="fas fa-caret-down drop_btn" id="dropdown_icon_burger"></i>
                         </a>
                         <div class="dropdown_content_burger" id="myDropdownBurger">
                             <a href="#">Clothes</a>
@@ -76,7 +76,216 @@
 <!--End Header-->
 <!--Start Product Card Section-->
 <section class="product_cards ">
+    <div class="container">
+        <div class="row">
+            <div class="dropContainer" >
+                <div class="drop_label">Shop</div>
+                <div class="custom-select-wrapper">
+                    <div class="custom-select">
+                        <div class="custom-select__trigger"><span>All</span>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option selected" data-value="All">All</span>
+                            <span class="custom-option" data-value="Clothes">Clothes</span>
+                            <span class="custom-option" data-value="Bags">Bags</span>
+                            <span class="custom-option" data-value="Shoes">Shoes</span>
+                            <span class="custom-option" data-value="Dresses">Dresses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropContainer" >
+                <div class="drop_label">Price</div>
+                <div class="custom-select-wrapper">
+                    <div class="custom-select">
+                        <div class="custom-select__trigger"><span>Any</span>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option selected" data-value="Any">Any</span>
+                            <span class="custom-option" data-value="Clothes">Clothes</span>
+                            <span class="custom-option" data-value="Bags">Bags</span>
+                            <span class="custom-option" data-value="Shoes">Shoes</span>
+                            <span class="custom-option" data-value="Dresses">Dresses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropContainer" >
+                <div class="drop_label">Brand</div>
+                <div class="custom-select-wrapper">
+                    <div class="custom-select">
+                        <div class="custom-select__trigger"><span>Any</span>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option selected" data-value="Any">Any</span>
+                            <span class="custom-option" data-value="Clothes">DG</span>
+                            <span class="custom-option" data-value="Bags">Louis</span>
+                            <span class="custom-option" data-value="Shoes">Chanel</span>
+                            <span class="custom-option" data-value="Dresses">Moscino</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropContainer size_select">
+                <div class="drop_label">Size</div>
+                <div class="custom-select-wrapper">
+                    <div class="custom-select" >
+                        <div class="custom-select__trigger" >
+                            <style>
+                                .mr{
+                                    margin-right:12px;
+                                }
+                                .size_select{
+                                    border:none;
+                                    max-width:260px;
+                                    padding: 0;
+                                }
+                                .label_checkbox {
+                                    display: none;
 
+                                }
+                                .size_select .custom-select{
+                                    border:none;
+                                    padding: 0;
+                                }
+                                .size_select .custom-select__trigger{
+                                    padding: 0;
+                                    justify-content: unset;
+
+                                }
+                                .size_select .custom-options{
+                                    top: 120%;
+                                }
+
+                                .size_select .label_check {
+                                    max-width:68px;
+                                    /*margin-right:12px;*/
+                                    padding:20px 32px;
+                                    border-radius: 8px;
+                                    border: 2px solid #E5E5EA;
+                                    /*background: #F2F2F2;*/
+                                    vertical-align: middle;
+                                    width: 2em;
+                                    height: 2em;
+                                    cursor: pointer;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-family: 'Mulish',sans-serif;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    text-align: center;
+                                    color: #1B2437;
+                                }
+                                .size_select .label_check:nth-child(4){
+                                    margin:0;
+                                }
+                                .size_select .label_check:nth-child(5){
+                                    margin:0;
+                                }
+                                .size_select .label_check:nth-child(6){
+                                    margin:0;
+                                }
+                                .size_select .custom-options{
+                                    display: flex;
+                                    /*padding: 10px;*/
+                                    margin: -1px;
+                                    flex-wrap: wrap;
+                                }
+                                .size_select .custom-option {
+                                    /*padding:8px 15px;*/
+                                    border-radius:8px;
+                                    position: relative;
+                                    font-family:"Mulish",sans-serif;
+                                    display: block;
+                                    /*padding: 0 15px;*/
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    background-color: #fff;
+                                    /*line-height: 60px;*/
+                                    cursor: pointer;
+                                    transition: all 0.5s;
+                                }
+
+                                .size_select .label_check:hover {
+                                    border-radius:8px;
+                                    color: #ffffff;
+                                    border:2px solid #EDA3B5;
+                                    background-color:#EDA3B5;
+                                }
+
+
+                                .size_select .selected  {
+                                    border:2px solid #EDA3B5;
+                                    border-radius: 8px;
+                                    color: white;
+                                    background-color: #EDA3B5;
+                                }
+
+                            </style>
+                            <label for="xs">
+                                <input type="checkbox" id="xs" class="label_checkbox">
+                                    <span class="label_text">
+                                        <span class="label_check mr">XS</span>
+                                    </span>
+                            </label>
+                            <label for="s">
+                                <input type="checkbox" id="s" class="label_checkbox">
+                                <span class="label_text">
+                                        <span class="label_check mr">S</span>
+                                </span>
+                            </label>
+                            <label for="m">
+                                <input type="checkbox" id="m" class="label_checkbox">
+                                <span class="label_text">
+                                        <span class="label_check mr">M</span>
+                                </span>
+                            </label>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option " data-value="L">
+                                <label for="l">
+                                    <input type="checkbox" id="l" class="label_checkbox">
+                                    <span class="label_text">
+                                            <span class="label_check">L</span>
+                                    </span>
+                                </label>
+                            </span>
+                            <span class="custom-option" data-value="xl">
+                                <label for="xl">
+                                    <input type="checkbox" id="xl" class="label_checkbox">
+                                    <span class="label_text">
+                                            <span class="label_check">XL</span>
+                                    </span>
+                                </label>
+                            </span>
+                            <span class="custom-option" data-value="xxl">
+                                <label for="xxl">
+                                    <input type="checkbox" id="xxl" class="label_checkbox">
+                                    <span class="label_text">
+                                            <span class="label_check">XXL</span>
+                                    </span>
+                                </label>
+                            </span>
+                            <span class="custom-option" data-value="xxs">
+                                <label for="xxs">
+                                    <input type="checkbox" id="xxs" class="label_checkbox">
+                                    <span class="label_text">
+                                            <span class="label_check">XXS</span>
+                                    </span>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="product_cards_container container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
@@ -161,7 +370,7 @@
         </div>
         <a href="#" class="next"></a>
     </div>
-
+    </div>
 </section>
 <!--End Product Card Section-->
 <!--Start Footer-->
@@ -223,6 +432,7 @@
 <!--Start JQuery-->
 <script type="text/javascript" src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!--Start JS-->
-<script  type="text/javascript" src="js/scriptShopping.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+<!--<script  type="text/javascript" src="js/scriptShopping.js"></script>-->
 </body>
 </html>
