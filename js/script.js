@@ -131,6 +131,8 @@ $(document).ready(function(){
         autoplaySpeed:2000,
         pauseOnFocus:true,
         pauseOnDotsHover:true,
+        appendArrows: '.product_container .slider_nav',
+        appendDots:'.product_container .slider_nav',
         pauseOnHover:true,
         customPaging : function(slider, i) {
             let identifier = "slick_dot_" + i;
