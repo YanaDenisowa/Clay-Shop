@@ -21,6 +21,11 @@
     display: flex;
     justify-content: space-between;
 }
+.header__logo{
+    display: flex;
+    align-items: center;
+
+}
 .header__logo a{
     margin-top:-7px;
     display: block;
@@ -55,7 +60,10 @@
     color:#1B2437;
     font-size:22px;
 }
-
+.header__cart{
+    display: flex;
+    align-items: center;
+}
 .header__cart a{
     text-decoration: none;
     display:inline-block;
@@ -94,7 +102,7 @@
     .header__logo a{
         margin-top:0;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 18px;
     }
     .header__cart a{
         margin-right: 0;
@@ -793,6 +801,11 @@ ul.row_links li a.active_page {
     font-size: 16px;
     line-height: 20px;
     color: #8E8E93;
+}
+.footer_row_large ul.footer_links,
+.footer_row_large .column_third ul,
+.footer_row_large .column_fourth ul{
+    padding-left:0;
 }
 @media screen and (max-width: 768px) {
     .footer_row_large > div {
