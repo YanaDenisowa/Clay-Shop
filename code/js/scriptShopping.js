@@ -37,5 +37,14 @@ window.onclick = function(event) {
         }
     }
 }
+function menuShow() {
+    let ulMenuShow = document.getElementById("right_menu_burger");
+    ulMenuShow.style.transform = "none";
+}
+function menuHide(){
+    let ulMenuHide=document.getElementById("right_menu_burger");
+    ulMenuHide.style.transform = "translate(0, -100%)";
+}
+
 
 
